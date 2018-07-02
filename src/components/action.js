@@ -5,11 +5,11 @@ class Action extends Component {
     render() {
         return (
 
-            <div className={`${this.props.className} action`}>
+            <button onClick={()=> this.props.onClick()} className={`${this.props.className} action`}>
                 {Icon("fas fa fa-plus-circle")}
                 {/* {Icon("fas fa fa-times-circle")} */}
                 
-            </div>
+            </button>
         )
     }
 }
