@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class Library extends Component{
+class Library extends Component {
     render() {
-        return(
-            <div classname="library">
-                <h1 className ="library__title">Course Library</h1>
+        return (
+            <div className="library">
+                <h1 className="library__title">Course Library</h1>
             </div>
         )
     }
