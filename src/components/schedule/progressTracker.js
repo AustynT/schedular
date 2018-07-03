@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+
+import React, { Component } from 'react';
 
 class ProgressTracker extends Component {
-    render(){
+    render() {
         return (
             <div className="progress-tracker">
                 <label className="progress-tracker__label">Progress Tracker</label>
