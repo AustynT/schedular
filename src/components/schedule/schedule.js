@@ -11,8 +11,8 @@ class Schedule extends Component {
         const data = this.props.courses
 
         return data.map((course, index) => {
-            if(course.enrolled && this.amountEnrolled !=5 ) {
-                this.amountEnrolled++
+            if(course.enrolled && this.amountEnrolled != 5) {
+                this.amountEnrolled++;
                 return <ScheduleCourse {...course} key={index}/>
             }
         })
@@ -25,7 +25,7 @@ class Schedule extends Component {
             <div className="schedule">
                 <h1 className="schedule__title">My Schedule</h1>
                 { this.renderCourses() }
-                <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled} />
+                <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled}/>
                 <Gradient/>
             </div>
         )
